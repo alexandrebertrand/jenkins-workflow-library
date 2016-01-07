@@ -11,7 +11,7 @@ node ('kubernetes'){
   git GIT_URL
 
   // lets install maven onto the path
-  withEnv(["PATH+MAVEN=${tool 'maven-3.3.1'}/bin"]) {
+  withEnv(["PATH+MAVEN=${tool 'cub-3.3.1'}/bin"]) {
 
     mavenCanaryRelease{
       version = canaryVersion
